@@ -86,13 +86,16 @@
 }
 .services {
   width: 30%;
-  height: 200px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 220px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.services:hover {
+  background-color: #ff8a1d;
 }
 .services .fa {
   font-size: 100px;
@@ -127,9 +130,10 @@
 }
 
 /* service 2 */
-.services-title {
+.title {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 .service2 {
   padding: 20px;
@@ -146,7 +150,7 @@
 .btn {
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .service2-btn {
   width: 180px;
@@ -158,24 +162,101 @@
   font-weight: bold;
 }
 
+/* client start */
+.client-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.our-client {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 42%;
+  height: 50%;
+  padding: 30px;
+  margin-top: 50px;
+}
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.client .fa-star {
+  color: #ff8a1d;
+}
+.client img {
+  border-radius: 50%;
+}
+.client-text {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+/* client end */
+
+/* contact us */
+
+.contact-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 90px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact-tilte {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.contact input {
+  width: 200%;
+  height: 10%;
+  margin-bottom: 30px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+}
+
+/* contact us end */
+
+/* footer */
+
+.footer-continer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #8f8f97;
+}
+.footer-continer i {
+  font-size: 30px;
+  color: blue;
+  margin-right: 10px;
+}
 @media (max-width: 858px) {
-  .navbar-content {
+  .navbar-content,
+  .flexStyle,
+  .services-container,
+  .service2,
+  .client-container,
+  .contact-us-container {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
   }
+
   .nav-btn {
     margin-bottom: 30px;
   }
-  .services-container,
-  .service2 {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
+
   .services {
     width: 90%;
     height: 200px;
     display: flex;
+  }
+  .contact-form input {
+    text-align: center;
+    width: 130%;
   }
 }
